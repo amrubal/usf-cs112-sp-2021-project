@@ -1,7 +1,7 @@
 package class0223;
 
 public abstract class PokemonMain {
-	
+	//Hello Angela this is Jonathan!!
 	private String name;
 	private String color;
 	

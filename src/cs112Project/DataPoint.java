@@ -3,19 +3,19 @@ package cs112Project;
 public class DataPoint {
 	private Double f1;
 	private Double f2;
-	private String label;
+	private int label;
 	private boolean isTest;
-	public DataPoint(Double f1, Double f2, String label, boolean isTest) {
+	public DataPoint(Double f1, Double f2, int label, boolean isTest) {
 		this.f1 = f1;
 		this.f2 = f2;
 		this.isTest = isTest;
-		setLabel(label);
+		this.label = label;
 	}
 	public DataPoint() {
 		this.f1 = 0.0;
 		this.f2 = 0.0;
 		this.isTest = false;
-		this.label = null;
+		this.label = 0;
 	}
 	public Double getF1() {
 		
@@ -25,7 +25,7 @@ public class DataPoint {
 		
 		return this.f2;
 	}
-	public String getLabel() {
+	public int getLabel() {
 		return this.label;
 	}
 	public boolean getIsTest() {
@@ -44,16 +44,14 @@ public class DataPoint {
 		}
 		this.f2=f2;
 	}
-	public void setLabel(String label) {
-		if(!(label.equals("Green")|| label.equals("Blue"))) {
-			return;
-		}
+	public void setLabel(int label) {
+		
 		this.label = label;
 	}
 	public void setIsTest(boolean isTest) {
 		this.isTest = true;
 	}
 	public String toString() {
-		return f1 + " " + f2 + " ";
+		return f1 + " " + f2 + " "+ label + " ";
 	}
 }

@@ -16,7 +16,7 @@ public class DummyPredictor extends Predictor{
 			while(s.hasNextLine()) {
 				double f1 = s.nextDouble();
 				double f2 = s.nextDouble();
-				String label = s.next();
+				int label = s.nextInt();
 				boolean isTest = s.nextBoolean();
 				DataPoint dp = new DataPoint(f1,f2,label,isTest);
 				list.add(dp);

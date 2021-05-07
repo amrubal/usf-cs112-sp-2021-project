@@ -312,5 +312,6 @@ public class KNNPredictor extends Predictor{
 		return pre;
 		
 	}
+	
 
 }
